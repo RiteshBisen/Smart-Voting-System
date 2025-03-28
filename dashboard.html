@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatElect - Home</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/vote2.png" alt="BharatElect Logo">
+            <span>Bharat<span class="elect">Elect</span></span>
+        </div>
+        <nav>
+            <ul>
+                <!-- <li><a href="#results" id="resultsBtn">Results</a></li> -->
+                <li><a href="#" id="profile-btn">Profile</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1><span class="orange">Wel</span><span class="green">come</span></h1>
+            <h2 id="dashboard-name">Shivam Bisen</h2>
+            <p>Welcome to <strong>BharatElect!</strong> We're transforming Indian elections with cutting-edge
+                technology.</p>
+            <button id="vote-now-btn">Vote Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/vote1.jpeg" alt="Election Illustration">
+        </div>
+    </section>
+
+    <!-- Voting Section -->
+    <section id="vote-section">
+        <h2 id="vote-now-heading">Vote Now!!</h2>
+        <div class="vote-buttons">
+            <!-- <button class="verify-btn">Verify Details</button>
+            <button class="face-btn">Face Recognition</button> -->
+        </div>
+    </section>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="card">Verify Details</div>
+            <div class="card">Face Recognition</div>
+            <div class="card">Biometric Recognition</div>
+            <div class="card">Generate Token</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <span class="footer-logo">Bharat<span class="elect">Elect</span></span>
+        </div>
+        <div class="footer-middle">
+            <h4>Team Members:</h4>
+            <p>Ritesh Bisen <br> Ankita Dawangan <br> Sasha Kolhatkar <br> Anirudh Gupta</p>
+        </div>
+        <div class="footer-right">
+            <h4>Support:</h4>
+            <p>riteshbisen2005@gmail.com <br> +91 7747969663</p>
+        </div>
+    </footer>
+
+    <!-- Profile Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+
+            <!-- View Profile Section -->
+            <div id="profile-view">
+                <h2>User Profile</h2>
+                <p><strong>Name:</strong> <span id="display-name">Shivam Bisen</span></p>
+                <p><strong>Email:</strong> <span id="display-email">shivambisen@gmail.com</span></p>
+                <p><strong>Phone:</strong> <span id="display-phone">+91 9876543210</span></p>
+                <button id="edit-profile-btn">Edit Profile</button>
+                <button id="close-sidebar">Close</button>
+            </div>
+
+            <!-- Edit Profile Section (Initially Hidden) -->
+            <div id="edit-profile" style="display: none;">
+                <h2>Edit Profile</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="Shivam Bisen">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="shivambisen@gmail.com">
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" value="+91 9876543210">
+
+                <button id="save-profile">Save</button>
+                <button id="cancel-edit">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Blur Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
